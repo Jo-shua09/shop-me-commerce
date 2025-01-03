@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  border: none;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+}
+
+a,
+i,
+button {
+  cursor: pointer;
+}
