@@ -101,3 +101,41 @@ export const HeroData = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore ",
   },
 ];
+
+export const ProductData = [
+  {
+    id: 1,
+    img: women,
+    title: "Women Ethnic",
+    color: "white",
+    stars: "5",
+  },
+  {
+    id: 2,
+    img: women2,
+    title: "Women western",
+    color: "red",
+    stars: "4.5",
+  },
+  {
+    id: 3,
+    img: women3,
+    title: "googles",
+    color: "brown",
+    stars: "4.7",
+  },
+  {
+    id: 4,
+    img: women4,
+    title: "Printed T-Shirt",
+    color: "yellow",
+    stars: "4",
+  },
+  {
+    id: 5,
+    img: women2,
+    title: "Fashion T-Shirt",
+    color: "pink",
+    stars: "3.5",
+  },
+];

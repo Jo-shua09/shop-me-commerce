@@ -6,14 +6,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Hero = () => {
   const settings = {
-    // dots: true, // Show navigation dots
+    dots: false, // Show navigation dots
     infinite: true, // Infinite loop
-    speed: 500, // Transition speed
+    speed: 800, // Transition speed
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1, // Number of slides to scroll
     autoplay: true, // Auto-play the slider
-    autoplaySpeed: 2000, // Auto-play interval
-    pauseOnHover: true, // Pause on hover
+    autoplaySpeed: 4000, // Auto-play interval
+    cssEase: "ease-inout",
+    pauseOnHover: false, // Pause on hover
+    pauseOnFocus: false, // Pause on focus
     arrows: false, // Show navigation arrows
   };
 
@@ -30,7 +32,7 @@ const Hero = () => {
               <div className="grid flex-wrap-reverse items-center justify-between grid-cols-1 gap-4 text-center gap-x-10 md:text-left md:grid-cols-2">
                 {/* Image content */}
                 <div className="flex items-center justify-center order-1 w-full pl-8 mx-auto sm:justify-end md:order-2">
-                  <img src={data.img} alt={data.title} className="w-[100%] h-auto mt-10 rounded-lg sm:mt-0" />
+                  <img src={data.img} alt={data.title} className="w-[100%] object-cover h-auto mt-10 rounded-lg sm:mt-0" />
                 </div>
 
                 {/* Text content */}
