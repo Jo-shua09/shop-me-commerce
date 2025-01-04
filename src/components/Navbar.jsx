@@ -6,7 +6,7 @@ import DarkMode from "./DarkMode";
 
 const Navbar = () => {
   return (
-    <div className="relative z-[99999] duration-200 bg-white shadow-md dark:bg-gray-900 dark:text-white">
+    <div className="relative z-[99999] duration-200 bg-white shadow-md dark:bg-gray-900 sm:mb-20 mb-0 dark:text-white">
       {/* Upper Navbar */}
       <div className="py-2 bg-primary/40">
         <div className="container flex items-center justify-between">
@@ -53,7 +53,7 @@ const Navbar = () => {
       </div>
 
       {/* Lower Navbar */}
-      <div className="absolute left-0 right-0 z-[9999] items-center justify-center hidden w-full gap-12 py-4 mx-auto shadow-md dark:bg-gray-900 top-18 sm:flex">
+      <div className="absolute left-0 right-0 z-[9999] hidden  items-center justify-center  w-full gap-12 py-4 mx-auto shadow-md dark:bg-gray-900 top-18 sm:flex">
         {Menu.map((menu) => (
           <div key={menu.id}>
             <ul>

@@ -1,14 +1,51 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { HeroData } from "../assets/assets";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Hero = () => {
+  const settings = {
+    // dots: true, // Show navigation dots
+    infinite: true, // Infinite loop
+    speed: 500, // Transition speed
+    slidesToShow: 1, // Number of slides to show at once
+    slidesToScroll: 1, // Number of slides to scroll
+    autoplay: true, // Auto-play the slider
+    autoplaySpeed: 2000, // Auto-play interval
+    pauseOnHover: true, // Pause on hover
+    arrows: false, // Show navigation arrows
+  };
+
   return (
-    <div className="relative overflow-hidden  border-gray-900 mt-20 min-h-[550px] sm:min-h-[700px] bg-gray-100">
+    <div className="relative overflow-hidden flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200  min-h-[550px] sm:min-h-[650px] bg-gray-100">
       {/* background pattern */}
-      <div className="h-[700px] overflow-hidden w-[700px] bg-primary/40  absolute -top-1/2 right-0 rounded-3xl rotate-45 "></div>
+      <div className="h-[70%]  w-[700px] bg-primary/40 -z-9 absolute -top-1/2 right-0 rounded-3xl rotate-45 "></div>
 
       {/*  hero section */}
-      <div className=""></div>
+      <div className="container z-10 pb-8 sm:pb-0">
+        <Slider {...settings}>
+          {HeroData.map((data) => (
+            <div key={data.id} className="w-full mt-20 md:mt-0">
+              <div className="grid flex-wrap-reverse items-center justify-between grid-cols-1 gap-4 text-center gap-x-10 md:text-left md:grid-cols-2">
+                {/* Image content */}
+                <div className="flex items-center justify-center order-1 w-full pl-8 mx-auto sm:justify-end md:order-2">
+                  <img src={data.img} alt={data.title} className="w-[100%] h-auto mt-10 rounded-lg sm:mt-0" />
+                </div>
+
+                {/* Text content */}
+                <div className="order-2 w-full md:order-1">
+                  <h1 className="font-extrabold sm:text-[5.5rem] text-7xl sm:leading-[6rem] sm:pb-10 md:pb-5 pb-2">{data.title}</h1>
+                  <p className="pb-10 mt-4 text-xl font-medium text-gray-500 normal-case sm:text-2xl">{data.description}</p>
+                  <button className="flex items-center px-6 py-4 mx-auto text-3xl text-white transition-all duration-500 ease-in-out rounded-full md:mx-0 bg-gradient-to-r from-primary to-secondary">
+                    Order Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
