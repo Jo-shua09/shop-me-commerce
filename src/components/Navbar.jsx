@@ -21,10 +21,10 @@ const Navbar = () => {
 
           {/*  search section starts */}
           <div className="flex items-center justify-between flex-nowrap gap-x-5">
-            <div className="relative group">
+            <div className="relative hidden group sm:block">
               <input
                 type="text"
-                className="pl-4 border border-gray-300 rounded-full text-2xl transition-all duration-300 text-black w-[20rem] h-[3.5rem] hover:w-[24rem] focus:w-[24rem] focus:shadow-xldark:bg-gray-900 dark:text-white hidden sm:block"
+                className="pl-4 border border-gray-300 rounded-full text-2xl transition-all duration-300 text-black w-[20rem] h-[3.5rem] hover:w-[24rem] focus:w-[24rem] focus:shadow-xl dark:bg-gray-900 dark:text-white "
                 placeholder="search..."
               />
               <IoMdSearch className="absolute text-gray-900 transform -translate-y-1/2 cursor-pointer group-hover:text-primary dark:text-white size-8 right-4 top-1/2" />
@@ -36,7 +36,7 @@ const Navbar = () => {
               className="flex items-center px-4 py-2 text-3xl text-white transition-all duration-500 ease-in-out rounded-full bg-gradient-to-r from-primary to-secondary gap-x-2 group"
             >
               <span className="hidden font-medium group-hover:block">Order</span>
-              <FaShoppingCart className="text-5xl sm:text-base " />
+              <FaShoppingCart className="text-5xl sm:text-3xl " />
             </button>
 
             {/*  dark mode starts */}
@@ -70,7 +70,7 @@ const Navbar = () => {
             </span>
           </a>
 
-          <div className="w-full text-black hidden group-hover:block absolute  z-[9999]  py-3 bg-white  rounded-md shadow-lg">
+          <div className="w-full text-black hidden group-hover:block absolute  z-[9999]  py-3 bg-white dark:bg-gray-900 dark:text-white  rounded-md shadow-lg">
             <ul className="">
               {DropDown.map((drop) => (
                 <li key={drop.id} className="px-2 list-none ">
