@@ -62,3 +62,45 @@ export const Menu = [
     link: "#",
   },
 ];
+
+export const DropDown = [
+  {
+    id: 1,
+    name: "trending products",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "best selling",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "top rated",
+    link: "/#",
+  },
+];
+
+export const HeroData = [
+  {
+    id: 1,
+    img: women,
+    title: "Upto 50% off on all Men's Wear",
+    desription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore totam reprehenderit placeat",
+  },
+  {
+    id: 2,
+    img: shopping,
+    title: "30% off on all Women's Wear",
+    desription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore totam reprehenderit placeat",
+  },
+  {
+    id: 3,
+    img: sale,
+    title: "70%  off on all Products Sale",
+    desription:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore totam reprehenderit placeat",
+  },
+];

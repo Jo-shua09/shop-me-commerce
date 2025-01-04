@@ -1,14 +1,13 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import { DropDown, Menu, assets } from "../assets/assets";
 import { IoMdSearch } from "react-icons/io";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 
 const Navbar = () => {
   return (
-    <div className="relative z-40 duration-200 bg-white shadow-md dark:bg-gray-900 dark:text-white">
-      {/* Uper Navbar */}
-
+    <div className="relative z-[99999] duration-200 bg-white shadow-md dark:bg-gray-900 dark:text-white">
+      {/* Upper Navbar */}
       <div className="py-2 bg-primary/40">
         <div className="container flex items-center justify-between">
           <div className="">
@@ -22,18 +21,23 @@ const Navbar = () => {
 
           {/*  search section starts */}
           <div className="flex items-center justify-between flex-nowrap gap-x-5">
-            <div className="relative">
+            <div className="relative group">
               <input
                 type="text"
-                className="pl-4 border border-gray-300 rounded-full text-2xl transition-all duration-300 text-black w-[20rem] h-[3.5rem] hover:w-[24rem] focus:w-[24rem] focus:shadow-xl hidden sm:block "
+                className="pl-4 border border-gray-300 rounded-full text-2xl transition-all duration-300 text-black w-[20rem] h-[3.5rem] hover:w-[24rem] focus:w-[24rem] focus:shadow-xl 
+                dark:bg-gray-900 dark:text-white
+                hidden sm:block "
                 placeholder="search..."
               />
-              <IoMdSearch color="black" className="absolute sm:size-7 size-11 cursor-pointer -top-5 right-0  sm:right-4 sm:top-[1rem]" />
+              <IoMdSearch
+                // color="black"
+                className=" group-hover:text-primary dark:text-white text-gray-900 absolute sm:size-7 size-11 cursor-pointer -top-5 right-0  sm:right-4 sm:top-[1rem]"
+              />
             </div>
 
             {/*  order button starts */}
             <button
-              onClick={() => alert("order function inavailable for now!!")}
+              onClick={() => alert("Order function unavailable for now!!")}
               className="flex items-center px-4 py-2 text-3xl text-white transition-all duration-500 ease-in-out rounded-full bg-gradient-to-r from-primary to-secondary gap-x-2 group"
             >
               <span className="hidden font-medium group-hover:block">Order</span>
@@ -49,7 +53,41 @@ const Navbar = () => {
       </div>
 
       {/* Lower Navbar */}
-      <div className=""></div>
+      <div className="absolute left-0 right-0 z-[9999] items-center justify-center hidden w-full gap-12 py-4 mx-auto shadow-md dark:bg-gray-900 top-18 sm:flex">
+        {Menu.map((menu) => (
+          <div key={menu.id}>
+            <ul>
+              <li className="flex list-none">
+                <a href={menu.link} className="text-2xl font-semibold duration-200 hover:text-primary">
+                  {menu.name}
+                </a>
+              </li>
+            </ul>
+          </div>
+        ))}
+
+        {/* Drop down menu */}
+        <li className="relative z-[999] list-none group">
+          <a href="#" className="flex items-center gap-1 py-2 text-2xl font-semibold transition-all duration-200 ">
+            trending products
+            <span>
+              <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
+            </span>
+          </a>
+
+          <div className="w-full text-black hidden group-hover:block absolute  z-[9999]  py-3 bg-white  rounded-md shadow-lg">
+            <ul className="">
+              {DropDown.map((drop) => (
+                <li key={drop.id} className="px-2 list-none ">
+                  <a href={drop.link} className="inline-block w-full px-4 py-3 text-xl font-semibold rounded-lg hover:bg-primary/20 ">
+                    {drop.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </li>
+      </div>
     </div>
   );
 };
