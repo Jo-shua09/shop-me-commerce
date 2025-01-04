@@ -8,11 +8,11 @@ const Navbar = () => {
   return (
     <div className="relative z-[99999] duration-200 bg-white shadow-md dark:bg-gray-900 sm:mb-20 mb-0 dark:text-white">
       {/* Upper Navbar */}
-      <div className="py-2 bg-primary/40">
+      <div className="py-4 sm:py-2 bg-primary/40">
         <div className="container flex items-center justify-between">
           <div className="">
             <a href="#">
-              <span className="flex items-center font-sans text-4xl font-bold normal-case gap-x-2">
+              <span className="flex items-center font-sans text-6xl font-bold normal-case sm:text-4xl gap-x-2">
                 <img src={assets.logo} alt="Logo" className="w-[3rem]" />
                 shopME
               </span>
@@ -31,7 +31,7 @@ const Navbar = () => {
               />
               <IoMdSearch
                 // color="black"
-                className=" group-hover:text-primary dark:text-white text-gray-900 absolute sm:size-7 size-11 cursor-pointer -top-5 right-0  sm:right-4 sm:top-[1rem]"
+                className=" group-hover:text-primary dark:text-white text-gray-900 absolute sm:text-8xl size-11 cursor-pointer -top-5 right-0  sm:right-4 sm:top-[1rem]"
               />
             </div>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
               className="flex items-center px-4 py-2 text-3xl text-white transition-all duration-500 ease-in-out rounded-full bg-gradient-to-r from-primary to-secondary gap-x-2 group"
             >
               <span className="hidden font-medium group-hover:block">Order</span>
-              <FaShoppingCart />
+              <FaShoppingCart className="text-5xl sm:text-base " />
             </button>
 
             {/*  dark mode starts */}

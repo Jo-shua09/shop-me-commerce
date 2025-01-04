@@ -86,21 +86,18 @@ export const HeroData = [
     id: 1,
     img: women,
     title: "Upto 50% off on all Men's Wear",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore totam reprehenderit placeat",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore ",
   },
   {
     id: 2,
     img: shopping,
     title: "30% off on all Women's Wear",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore totam reprehenderit placeat",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore ",
   },
   {
     id: 3,
     img: sale,
     title: "70%  off on all Products Sale",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore totam reprehenderit placeat",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque quas ullam repudiandae hic iure rem tempore ",
   },
 ];

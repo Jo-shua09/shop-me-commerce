@@ -60,7 +60,7 @@ const DarkMode = () => {
         src={assets.lightMode}
         alt="Switch to light mode"
         onClick={toggleTheme}
-        className={`absolute right-0 z-10 w-[5rem] cursor-pointer drop-shadow-[1px_1px_1px rgba(0,0,0,0.1)] transition-all duration-300 ${
+        className={`absolute right-0 z-10 sm:w-[5rem] w-[6.5rem] cursor-pointer drop-shadow-[1px_1px_1px rgba(0,0,0,0.1)] transition-all duration-300 ${
           theme === "dark" ? "opacity-0" : "opacity-100"
         }`}
       />
@@ -68,7 +68,7 @@ const DarkMode = () => {
         src={assets.darkMode}
         alt="Switch to dark mode"
         onClick={toggleTheme}
-        className={`w-[5rem] cursor-pointer drop-shadow-[1px_1px_1px rgba(0,0,0,0.1)] transition-all duration-300 ${
+        className={`sm:w-[5rem] w-[6.5rem] cursor-pointer drop-shadow-[1px_1px_1px rgba(0,0,0,0.1)] transition-all duration-300 ${
           theme === "light" ? "opacity-0" : "opacity-100"
         }`}
       />
