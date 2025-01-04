@@ -108,21 +108,21 @@ export const ProductData = [
     img: women,
     title: "Women Ethnic",
     color: "white",
-    stars: "5",
+    stars: "4",
   },
   {
     id: 2,
     img: women2,
     title: "Women western",
     color: "red",
-    stars: "4.5",
+    stars: "5",
   },
   {
     id: 3,
     img: women3,
     title: "googles",
     color: "brown",
-    stars: "4.7",
+    stars: "3",
   },
   {
     id: 4,
@@ -136,6 +136,6 @@ export const ProductData = [
     img: women2,
     title: "Fashion T-Shirt",
     color: "pink",
-    stars: "3.5",
+    stars: "3",
   },
 ];
