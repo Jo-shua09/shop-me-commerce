@@ -24,15 +24,10 @@ const Navbar = () => {
             <div className="relative group">
               <input
                 type="text"
-                className="pl-4 border border-gray-300 rounded-full text-2xl transition-all duration-300 text-black w-[20rem] h-[3.5rem] hover:w-[24rem] focus:w-[24rem] focus:shadow-xl 
-                dark:bg-gray-900 dark:text-white
-                hidden sm:block "
+                className="pl-4 border border-gray-300 rounded-full text-2xl transition-all duration-300 text-black w-[20rem] h-[3.5rem] hover:w-[24rem] focus:w-[24rem] focus:shadow-xldark:bg-gray-900 dark:text-white hidden sm:block"
                 placeholder="search..."
               />
-              <IoMdSearch
-                // color="black"
-                className=" group-hover:text-primary dark:text-white text-gray-900 absolute sm:text-8xl size-11 cursor-pointer -top-5 right-0  sm:right-4 sm:top-[1rem]"
-              />
+              <IoMdSearch className="absolute text-gray-900 transform -translate-y-1/2 cursor-pointer group-hover:text-primary dark:text-white size-8 right-4 top-1/2" />
             </div>
 
             {/*  order button starts */}
