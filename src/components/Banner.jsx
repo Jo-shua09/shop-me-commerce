@@ -11,7 +11,7 @@ const Banner = () => {
             <img src={assets.women2} alt="" className="md:w-[45rem] mx-auto h-[35rem] shadow-[1px_1px_10px rgba(0,0,0,0.5)] object-cover" />
           </div>
           <div className="w-full">
-            <h1 data-aos="fade-up" className="text-6xl font-bold normal-case pb-7">
+            <h1 data-aos="fade-up" className="sm:text-6xl text-4xl whitespace-nowrap font-bold normal-case pb-7">
               Winter Sale upto 50% Off
             </h1>
             <p data-aos="fade-up" className="text-2xl  text-gray-400 normal-case pb-5">
