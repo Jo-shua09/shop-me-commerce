@@ -37,8 +37,22 @@ const Hero = () => {
 
                 {/* Text content */}
                 <div className="order-2 w-full md:order-1">
-                  <h1 className="font-extrabold sm:text-[5.5rem] text-7xl sm:leading-[6rem] sm:pb-10 md:pb-5 pb-2">{data.title}</h1>
-                  <p className="pb-10 mt-4 text-xl font-medium text-gray-500 normal-case dark:text-white sm:text-2xl">{data.description}</p>
+                  <h1
+                    data-aos="zoom-out"
+                    data-aos-duration="500"
+                    data-aos-once="true"
+                    className="font-extrabold sm:text-[5.5rem] text-7xl sm:leading-[6rem] sm:pb-10 md:pb-5 pb-2"
+                  >
+                    {data.title}
+                  </h1>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-delay="200"
+                    className="pb-10 mt-4 text-xl font-medium text-gray-500 normal-case dark:text-white sm:text-2xl"
+                  >
+                    {data.description}
+                  </p>
                   <button className="flex items-center px-6 py-4 mx-auto text-3xl text-white transition-all duration-500 ease-in-out rounded-full md:mx-0 bg-gradient-to-r from-primary to-secondary">
                     Order Now
                   </button>

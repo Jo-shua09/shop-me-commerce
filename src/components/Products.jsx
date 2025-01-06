@@ -4,12 +4,16 @@ import { LiaStarSolid } from "react-icons/lia";
 
 const Products = () => {
   return (
-    <div className="pt-10 pb-10  dark:text-white dark:bg-gray-900 sm:pt-20 gap-y-6">
+    <div className="pt-16 pb-10 dark:text-white dark:bg-gray-900 sm:pt-20 gap-y-6">
       <div className="container flex flex-col items-center justify-center">
         <div className="flex flex-col items-center text-center gap-y-1">
-          <h3 className="text-xl font-semibold normal-case text-primary">Top Selling Products for you</h3>
-          <h1 className="text-6xl font-bold">Products</h1>
-          <p className="text-xl text-gray-400 normal-case">
+          <h3 data-aos="fade-up" className="text-xl font-semibold normal-case text-primary">
+            Top Selling Products for you
+          </h3>
+          <h1 data-aos="fade-up" className="text-6xl font-bold">
+            Products
+          </h1>
+          <p data-aos="fade-up" className="text-xl text-gray-400 normal-case">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi
           </p>
         </div>
@@ -17,6 +21,8 @@ const Products = () => {
         <div className="container grid items-center grid-cols-1 mt-10 gap-x-5 gap-y-10 lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3">
           {ProductData.map((data) => (
             <div
+              data-aos="fade-up"
+              data-aos-delay={data.aosDelay}
               key={data.id}
               className="flex flex-col items-center p-4 pb-8 duration-300 border rounded-lg shadow-sm cursor-pointer dark:border-none dark:shadow-2xl group hover:shadow-2xl"
             >

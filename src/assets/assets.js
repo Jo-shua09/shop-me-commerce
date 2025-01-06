@@ -151,15 +151,15 @@ export const BestProduct = [
   {
     id: 2,
     img: shirt2,
-    stars: 4,
-    title: "casual wear",
+    stars: 5,
+    title: "printed shirt",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
   {
     id: 3,
     img: shirt3,
-    stars: 4,
-    title: "casual wear",
+    stars: 3,
+    title: "women shirt",
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
 ];
