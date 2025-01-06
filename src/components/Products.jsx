@@ -37,7 +37,7 @@ const Products = () => {
             </div>
           ))}
         </div>
-        <button className="flex items-center px-6 py-4 mx-auto text-2xl font-bold text-white capitalize transition-all duration-500 ease-in-out rounded-lg mt-7 md:mx-0 bg-gradient-to-r from-primary to-secondary">
+        <button className=" flex items-center px-6 py-4 mx-auto text-2xl font-bold text-white capitalize transition-all duration-500 ease-in-out rounded-lg mt-20 md:mx-0 bg-gradient-to-r from-primary to-secondary">
           view all
         </button>
       </div>

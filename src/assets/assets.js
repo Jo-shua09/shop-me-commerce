@@ -139,3 +139,27 @@ export const ProductData = [
     stars: "3",
   },
 ];
+
+export const BestProduct = [
+  {
+    id: 1,
+    img: shirt,
+    stars: 4,
+    title: "casual wear",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+  {
+    id: 2,
+    img: shirt2,
+    stars: 4,
+    title: "casual wear",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+  {
+    id: 3,
+    img: shirt3,
+    stars: 4,
+    title: "casual wear",
+    description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+];

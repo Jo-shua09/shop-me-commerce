@@ -12,7 +12,9 @@ export default {
         center: "true",
         padding: {
           DEFAULT: "3rem",
-          sm: "6rem",
+          sm: "3rem",
+          md: "2rem",
+          lg: "5rem",
         },
       },
     },
