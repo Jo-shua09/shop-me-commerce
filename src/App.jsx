@@ -7,6 +7,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Banner from "./components/Banner";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   React.useEffect(() => {
@@ -28,6 +30,8 @@ function App() {
       <Banner />
       <Newsletter />
       <Products />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

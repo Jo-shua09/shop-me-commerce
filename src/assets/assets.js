@@ -163,3 +163,36 @@ export const BestProduct = [
     description: "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
 ];
+
+export const Testimonial = [
+  {
+    id: 1,
+    name: "joshua adams",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eos vitae inventore, dicta nam facilis consequatur",
+    img: "https://picsum.photos/108/101",
+  },
+  {
+    id: 2,
+    name: "david dickson",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eos vitae inventore, dicta nam facilis consequatur",
+    img: "https://picsum.photos/108/104",
+  },
+  {
+    id: 3,
+    name: "nathaniel basee",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eos vitae inventore, dicta nam facilis consequatur",
+    img: "https://picsum.photos/105/120",
+  },
+  {
+    id: 4,
+    name: "washingthon DC.",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eos vitae inventore, dicta nam facilis consequatur",
+    img: "https://picsum.photos/101/108",
+  },
+  {
+    id: 1,
+    name: "earnest rutherford",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis eos vitae inventore, dicta nam facilis consequatur",
+    img: "https://picsum.photos/101/101",
+  },
+];
