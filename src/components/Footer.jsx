@@ -1,6 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaTelegram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaPersonBooth, FaTelegram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -59,8 +59,8 @@ const Footer = () => {
               <FaTelegram className="text-3xl" /> <p className="text-3xl font-normal">Noida, Uttar Pradesh</p>
             </div>
             <div className="flex gap-x-5 items-center">
-              <FaPhone className="text-3xl" />
-              <p className="text-3xl font-normal">+000 000 0000</p>
+              <FaPersonBooth className="text-3xl" />
+              <p className="text-3xl font-normal">cloned by Tuma.Dev</p>
             </div>
           </div>
         </div>
