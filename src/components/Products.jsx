@@ -7,13 +7,13 @@ const Products = () => {
     <div className="pt-16 pb-10 dark:text-white dark:bg-gray-900 sm:pt-20 gap-y-6">
       <div className="container flex flex-col items-center justify-center">
         <div className="flex flex-col items-center text-center gap-y-1">
-          <h3 data-aos="fade-up" className="text-xl font-semibold normal-case text-primary">
+          <h3 data-aos="fade-up" data-aos-once="true" className="text-xl font-semibold normal-case text-primary">
             Top Selling Products for you
           </h3>
-          <h1 data-aos="fade-up" className="text-6xl font-bold">
+          <h1 data-aos="fade-up" data-aos-once="true" className="text-6xl font-bold">
             Products
           </h1>
-          <p data-aos="fade-up" className="text-xl text-gray-400 normal-case">
+          <p data-aos="fade-up" data-aos-once="true" className="text-xl text-gray-400 normal-case">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi
           </p>
         </div>
@@ -22,6 +22,7 @@ const Products = () => {
           {ProductData.map((data) => (
             <div
               data-aos="fade-up"
+              data-aos-once="true"
               data-aos-delay={data.aosDelay}
               key={data.id}
               className="flex flex-col items-center p-4 pb-8 duration-300 border rounded-lg shadow-sm cursor-pointer dark:border-none dark:shadow-2xl group hover:shadow-2xl"

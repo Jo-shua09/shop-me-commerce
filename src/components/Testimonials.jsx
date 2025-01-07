@@ -13,6 +13,7 @@ const Testimonials = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    arrow: "false",
     cssEase: "ease-in-out",
     responsive: [
       {
@@ -46,13 +47,13 @@ const Testimonials = () => {
     <div className="pt-16 pb-10 dark:text-white dark:bg-gray-900 sm:pt-20 gap-y-6">
       <div className="container flex flex-col items-center justify-center">
         <div className="flex flex-col items-center text-center gap-y-1">
-          <h3 data-aos="fade-up" className="text-xl font-semibold normal-case text-primary">
+          <h3 data-aos="fade-up" data-aos-once="true" className="text-xl font-semibold normal-case text-primary">
             What our customers are saying
           </h3>
-          <h1 data-aos="fade-up" className="text-6xl font-bold">
+          <h1 data-aos="fade-up" data-aos-once="true" className="text-6xl font-bold">
             Testimonials
           </h1>
-          <p data-aos="fade-up" className="text-xl text-gray-400 normal-case">
+          <p data-aos="fade-up" data-aos-once="true" className="text-xl text-gray-400 normal-case">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi
           </p>
         </div>
@@ -61,7 +62,7 @@ const Testimonials = () => {
       <div className=" container mt-16 sm:mt-20 mb-20 w-full">
         <Slider {...settings}>
           {Testimonial.map((data) => (
-            <div data-aos="fade-right" key={data.id} className="p-6 overflow-hidden">
+            <div data-aos="fade-right" data-aos-once="true" key={data.id} className="p-6 overflow-hidden">
               <div className="flex flex-col pt-10 pb-10 dark:bg-gray-800 gap-y-5 shadow-[1px_1px_10px_rgba(0,0,0,0.5)] items-start bg-primary/10 p-10 rounded-2xl w-full h-full">
                 <img src={data.img} alt="" className="w-28 h-28 rounded-full object-cover" />
                 <p className="text-xl text-gray-600 pt-10 pb-5">{data.text}</p>

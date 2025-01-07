@@ -7,13 +7,13 @@ const BestProducts = () => {
     <div className="pt-10 pb-10 md:pt-20 dark:text-white dark:bg-gray-900 sm:pt-20 gap-y-6">
       <div className="container flex flex-col justify-start">
         <div className="flex flex-col text-left gap-y-1">
-          <h3 data-aos="fade-right" className="text-xl font-semibold normal-case text-primary">
+          <h3 data-aos-once="true" data-aos="fade-right" className="text-xl font-semibold normal-case text-primary">
             Top Selling Products for you
           </h3>
-          <h1 data-aos="fade-right" className="text-6xl font-bold">
+          <h1 data-aos-once="true" data-aos="fade-right" className="text-6xl font-bold">
             Best Products
           </h1>
-          <p data-aos="fade-right" className="text-xl text-gray-400 normal-case">
+          <p data-aos-once="true" data-aos="fade-right" className="text-xl text-gray-400 normal-case">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi
           </p>
         </div>
@@ -22,6 +22,7 @@ const BestProducts = () => {
       <div className="w-full grid lg:gap-x-56 md:gap-x-40 md:gap-y-5 gap-y-7 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 container">
         {BestProduct.map((data) => (
           <div
+            data-aos-once="true"
             data-aos="zoom-in"
             data-aos-delay={data.aosDelay}
             key={data.id}
