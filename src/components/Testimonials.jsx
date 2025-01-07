@@ -61,7 +61,7 @@ const Testimonials = () => {
       <div className=" container mt-16 sm:mt-20 mb-20 w-full">
         <Slider {...settings}>
           {Testimonial.map((data) => (
-            <div data-aos="fade-right" data-aos-delay={data.aosDelay} key={data.id} className="p-6 overflow-hidden">
+            <div data-aos="fade-right" key={data.id} className="p-6 overflow-hidden">
               <div className="flex flex-col pt-10 pb-10 dark:bg-gray-800 gap-y-5 shadow-[1px_1px_10px_rgba(0,0,0,0.5)] items-start bg-primary/10 p-10 rounded-2xl w-full h-full">
                 <img src={data.img} alt="" className="w-28 h-28 rounded-full object-cover" />
                 <p className="text-xl text-gray-600 pt-10 pb-5">{data.text}</p>
