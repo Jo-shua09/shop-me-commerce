@@ -13,7 +13,6 @@ import Testimonials from "./components/Testimonials";
 function App() {
   React.useEffect(() => {
     AOS.init({
-      offset: 100,
       duration: 800,
       easing: "ease-in-out",
       delay: 100,
